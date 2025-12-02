@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>커피는 진화중!</title>
+	<style type="text/css">
+
+
+		@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+<link rel="preconnect" href="https://4pl67mv56j.execute-api.ap-northeast-2.amazonaws.com">
+<link rel="stylesheet" href="https://4pl67mv56j.execute-api.ap-northeast-2.amazonaws.com/v1/api/css/drop_fontstream_css/?sid=gAAAAABpIzJh92bfv0A-_PuCUn1XlAb84KZtMV-aDghaquUdL9Dt8Q_iyHM107MijTDRgvVKPEBcre3sTTmW3Q0O9E8BBSEcLFPKITpPpMkl_gFXzvmhbCgIsUgFNMp8ykSdSy0O-SvxN7CfLmPyxc2bWzswhGCJo7VvKpFZysHAdTvvNHQG66Sx2erg4iIB3ZhqvNyau2PQGMbst-Vmx_IgW880h17-VSIfurb26kk18IhCNCLRJL2CGuM3Yr8_bgc5kd-iBNCu" charset="utf-8" referrerpolicy="origin"></link>
+
+
+
+		html {
+     			 font-family: 'Pretendard', sans-serif;
+      			 font-weight: 300; 
+      			 font-size: 20px;
+      			 line-height: 1.8;
+      			 word-break: keep-all;}
+
+      	body{font-family: 'Pretendard', sans-serif;
+		    font-weight: 300;
+		    line-height: 1.8;
+		    word-break: keep-all;
+		    margin: 0;}
+
+		nav{
+			background: hotpink;
+			margin: 0px 0px;
+			}
+		body,h1, h2, p, ol, ul{margin: 0;}
+		header,section,footer{
+			margin: auto;}
+				img{width: 100%;}
+
+      		.sandoll{font-family: 'Sandoll CT Sans', sans-serif;
+      		font-weight: 400; 
+      		font-size:3rem;
+      		padding-top:100px;
+      		padding-bottom: 100px;
+      		
+      		}
+      	.wrap{
+      		margin: 0 auto;
+      		padding: 0px;}
+      	p{font-size: 20px}
+      	.p1{line-height: 1.6;}
+      	.p2{line-height: 2.3;}
+
+      	.newFont{font-family: 'Sandoll CT Sans', sans-serif;
+      		font-weight: 400; }
+
+
+		.menu {
+  				display: flex;   /* 가로로 나열해! */
+  				gap: 80px;       /* 메뉴 사이 간격 */
+  				list-style: none; /*메뉴 앞 점 없애는거*/
+  				margin: 0;
+  				padding: 12px;
+  				justify-content: center;
+				}
+		.menu a{color: #291C13;
+			text-decoration: none;}
+		.menu a:hover {color: lightpink;}
+
+		.right-spacing{padding: 0px 0px 0px 600px;}
+		.left-spacing{padding: 30px 0px 0px 400px;}
+		.c1{padding: 250px 24px 0px 200px;}
+		.c2{padding: 70px 0px 20px 30px;}
+
+.ls{padding-left: 278px;}
+		.right-spacing2{padding: 0px 278px 0px 0px;}
+		.ight-spacing{padding:0px 27px 0px 0px;}
+		.left-spacing2{padding-left: 220px;}
+		.padding-bottom{padding-bottom: 50px;}
+
+		.
+		.bg-brown{background:#291C13 }
+		
+		.padding-top{padding-top: 20px;}
+		.padding-bottom{padding-bottom: 60px;}
+		.rightm{margin-right: 120px;}
+
+		.padding-top2{padding-top: 200px;}
+		.coffeefire{padding-top: 20px; font-size: 1.4rem;}
+
+		.bg-header{background: url(intro.png);
+			background-size: cover;
+			background-position:center;
+			background-attachment: scroll;}
+		.bean1{width: 45px; height: auto; display: block; margin: auto;}
+		.bean2{width: 80px;height: auto; display: block; margin: auto;}
+
+		.caldi{padding: 0px 0px 0px 278px;
+			text-align: center;
+		display: block;
+			width: 1000px;
+			margin: 0 auto;}
+		.imgfl{float: left;}
+		.title{font-size: 6.2rem;}
+		.bigfont{font-size: 5rem;}
+		.mfont{font-size: 3rem;}
+		.sfont{font-size: 1.6rem;}
+		.black{color: black;}
+		.spt{padding-top: 40px;}
+		.spt2{padding-top: 1000px;}
+		.spt3{padding-top: 200px;}
+		.sp4{padding-top: 150px;}
+		.sp5{padding-top: 120px;}
+		.sp6{padding-top: 700px;}
+
+		.multi-line .line1{color: #FF20CE;}
+		.multi-line .line2{color: #FF66DD;}
+		.multi-line .line3{color: #FFACED;}
+		.multi-line .line4{color: white;}
+		.multi-line .line5{color: white;}
+
+		.overlay-text1 {
+			  position: absolute;
+			  top: 0%;            /* 원하는 곳으로 조절 */
+			  left: 50%;
+			  color: #291C13;         /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+			transform: translate(-50%, -50%);}
+		.overlay-text2 {
+			  position: absolute;
+			  top: 1950px;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  color: black;         /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+			}
+		.overlay-text3 {
+			  position: absolute;
+			  top: 3370px;            /* 원하는 곳으로 조절 */
+			  left: 37%;
+			  color: black; 
+			  width: 823px;        /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+			
+			}
+		.overlay-text4 {
+			  position: absolute;
+			  top: 5800px;            /* 원하는 곳으로 조절 */
+			  left: 620px;
+			  color: black;         /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+			}
+		.overlay-text5 {
+			  position: absolute;
+			  top: 2700px;            /* 원하는 곳으로 조절 */
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  color: black;         /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+			}
+		.overlay-text6 {
+			  position: absolute;
+			  top: 900px;            /* 원하는 곳으로 조절 */
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  color: black;         /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+			}
+		.overlay-text8 {
+			  position: absolute;
+			  top: 161%;            /* 원하는 곳으로 조절 */
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  color: #291C13;         /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+
+			}
+		.bg-box{width: 100%;
+			   height: 1500px;/* 원하는 높이 */
+			  background-image: url('pinkfire.png');
+			  background-size: cover;      /* 꽉 차게 */
+			  background-position: center; /* 가운데 정렬 */
+			  position: relative;          /* overlay 기준 */
+			}
+		.bg-gif{width: 100%;
+			   height: 270px;/* 원하는 높이 */
+			  background-image: url('gif.gif');
+			  background-size: cover;      /* 꽉 차게 */
+			  background-position: center; /* 가운데 정렬 */
+			  position: relative;          /* overlay 기준 */
+			}
+		.bg-roasting{width: 100%;
+			   height: 880px;/* 원하는 높이 */
+			  background-image: url('roasting.png');
+			  background-size: cover;      /* 꽉 차게 */
+			  background-position: center; /* 가운데 정렬 */
+			  position: relative;          /* overlay 기준 */
+			}
+		.bg-paper{width: 100%;
+			   height: 3200px;/* 원하는 높이 */
+			  background-image: url('paper.png');
+			  background-size: cover;      /* 꽉 차게 */
+			  background-position: center; /* 가운데 정렬 */
+			  position: relative;          /* overlay 기준 */
+			background-repeat: no-repeat;}
+		.bg-whiteco{width: 100%;
+			   height: 880px;/* 원하는 높이 */
+			  background-image: url('whiteco.png');
+			  background-size: cover;      /* 꽉 차게 */
+			  background-position: center; /* 가운데 정렬 */
+			  position: relative;          /* overlay 기준 */
+			}
+
+		.text2{padding-left: 97px; padding-top: 303px;}
+		.center{text-align: center;}
+		.text-right{text-align: right;}
+		.bold{font-weight: bold;}
+
+		.imgfl{float: right;}
+		.setfl{float: center}
+		.pink{color: #FF20CE;}
+		.white{color: white;}
+		.gray{color: gray;}
+
+		.pinkmug{padding-left: 580px; padding-top: 60px; padding-bottom: 90px;}
+		.textimg{padding-right: 300px; padding-top: 50px;}
+		.center-box{display: block;
+			width: 500px;
+			margin: 0 auto;}
+		.center-box2{display: block;
+			width: 600px;
+			margin: 0 auto;}
+		
+		.bg-black{background: black;}
+		.koreacoffee{padding: 120px 0px 20px 220px;}
+
+		.stack{position: relative;
+			width: 400px;}
+		.img1{position: absolute;
+			top: 40px; left: 1000px;
+			width: 280px; height: auto; z-index: 1}
+		.img2{position: absolute;
+			top: 477px; left: 160px;
+			width: 300%; height: auto; z-index: 2}
+		.overlay-text7{position: absolute;
+					  top: 20px;       /* img1 영역 위쪽 쪽으로 */
+					  left: 60px;      /* 이미지2 쪽은 피해서 */
+					  z-index: 3;      /* 제일 위 레이어 */
+					  color: black;
+					  width: 800px;}
+		.egg{position: absolute;
+			top: 970px; left: 230px;
+			width: 300%; height: auto; z-index: 1}	
+		.mix{padding: 220px 0px 0px 90px;}	
+		.mixtext{padding-top: 100px;}
+		.smalltext{font-size: 0.8rem;}
+
+		.dot2{position: absolute;
+			top: 1900px; left: 93px;
+			width: 80%; height: auto; z-index: 1} 
+.circle{position: absolute;
+			top: 3363px; left: 63px;
+			width: 100%; height: auto; z-index: 1}
+	.overlay-texts1 {
+			  position: absolute;
+			  top: 1645px;
+			  left: 26%;
+			  transform: translate(-50%, -50%);
+			  color: black;         /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+			}
+	.overlay-texts2 {
+			  position: absolute;
+			  top: 1645px;
+			  left: 40%;
+			  transform: translate(-50%, -50%);
+			  color: black;         /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+			}
+	.overlay-texts3 {
+			  position: absolute;
+			  top: 1645px;
+			  left: 54%;
+			  transform: translate(-50%, -50%);
+			  color: black;         /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+			}
+	.overlay-texts4 {
+			  position: absolute;
+			  top: 1645px;
+			  left: 66.5%;
+			  transform: translate(-50%, -50%);
+			  color: black;         /* 색 반드시 넣어야 보임 */
+			  pointer-events: none; /* 텍스트 클릭 방해 안하도록 선택 (선택 사항) */
+			}
+	.bg-brown{background: #26190E;}
+	.title1{width: 100%;
+					  height: 100vh;
+					  display:flex;
+					  justify-content:center;
+					  align-items:center;
+					}
+
+	.hidden{position: relative;   /* 내부 absolute 기준 */
+					  width: 1462px;
+					  height: 200px;        /* 프레임 크기 */
+					       /* 프레임 밖은 다 숨김 */
+					  }
+	.uptext{position: relative; z-index: 2;}
+			  
+	.under-circle{position: absolute; top:-87px;
+					  bottom: -20px;      /* 아래로 밀어서 텍스트 밑에 겹치게 */
+					  left: 523px;
+					  z-index: 1;         /* 텍스트보다 아래 */
+					  width: 1000px;}
+		 
+
+			/* 그라데이션만 덧씌우는 레이어 */
+	.wrap1 {
+			  background: linear-gradient(to bottom,
+              #ffffff 0%,
+              #ffffff 20%,
+              #ff0080 100%); 
+  				min-height: 200vh; 
+}
+
+			/* header, sec1은 배경색을 따로 주지 말기! */
+	.wrap1 header,
+	.wrap1 .sec1 {
+			  background: transparent;
+			}
+
+			/* 헤더는 화면 위쪽 영역 높이 */
+	.wrap1 header {
+			  position: relative;
+			  height: 100vh;   /* 필요하면 값 줄이거나 늘려도 됨 */
+			  overflow: hidden;
+			}
+
+			/* 헤더 안 텍스트/이미지 위로 올라오게 */
+	.wrap1 header img,
+	.wrap1 header .overlay-text1 {
+			  position: relative;
+			  z-index: 1;
+			}
+	.wrap1 .sec1 {
+			  position: relative;}
+	  .wrap1 .sec1 .overlay-text2 {
+			  position: relative;
+			  z-index: 1;             /* 혹시 모를 겹침 대비 */
+			}
+
+	.fade-down {
+  animation: fadeDown 1.2s ease-out forwards; opacity: 0; /* 1초 동안, 부드럽게, 유지 */
+}
+
+		@keyframes fadeDown {
+		  0% {
+		    opacity: 0;
+		    transform: translateY(-20px);  /* 위에서 시작 */
+		  }
+		  100% {
+		    opacity: 1;
+		    transform: translateY(0);      /* 제자리 */
+		  }
+		}
+		.fade-down-body {
+		  animation: fadeDown 1s ease-out infinite forwards;
+		  animation-delay: 2s;  /* 2초 후에 시작 */
+		  opacity: 0;           /* 시작 전에는 안 보이게 */
+		}
+		.spin {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+		.cherry1 {
+		  position: absolute;
+		  top: 490%;                  /* 원하는 위치로 조정 */
+		  right: 76%;                /* 원하는 위치로 조정 */
+		  transform: translateY(-50%);
+		  width: 300px;              /* 이미지 크기 */
+		  pointer-events: none;      /* hover 방해 방지 */
+		  z-index: 1;
+		}
+		.cherry2 {
+		  position: absolute;
+		  top: 503%;                  /* 원하는 위치로 조정 */
+		  right:70%;                /* 원하는 위치로 조정 */
+		  transform: translateY(-50%);
+		  width: 190px;              /* 이미지 크기 */
+		  pointer-events: none;      /* hover 방해 방지 */
+		  z-index: 1;
+		}
+		.cherry3 {
+		  position: absolute;
+		  top: 530%;                  /* 원하는 위치로 조정 */
+		  right:79%;                /* 원하는 위치로 조정 */
+		  transform: translateY(-50%);
+		  width: 90px;              /* 이미지 크기 */
+		  pointer-events: none;      /* hover 방해 방지 */
+		  z-index: 1;
+		}
+		.cherry4 {
+		  position: absolute;
+		  top: 555%;                  /* 원하는 위치로 조정 */
+		  right:20%;                /* 원하는 위치로 조정 */
+		  transform: translateY(-50%);
+		  width: 80px;              /* 이미지 크기 */
+		  pointer-events: none;      /* hover 방해 방지 */
+		  z-index: 1;
+		}
+		.cherry5 {
+		  position: absolute;
+		  top: 572%;                  /* 원하는 위치로 조정 */
+		  right:26%;                /* 원하는 위치로 조정 */
+		  transform: translateY(-50%);
+		  width: 130px;              /* 이미지 크기 */
+		  pointer-events: none;      /* hover 방해 방지 */
+		  z-index: 1;
+		}
+		.cherry6 {
+		  position: absolute;
+		  top: 585%;                  /* 원하는 위치로 조정 */
+		  right:20%;                /* 원하는 위치로 조정 */
+		  transform: translateY(-50%);
+		  width: 200px;              /* 이미지 크기 */
+		  pointer-events: none;      /* hover 방해 방지 */
+		  z-index: 1;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+	<nav>
+		<ul class="menu">
+    	<li><a href="#chapter1">1. 발견된 커피 열매</a></li>
+    	<li><a href="#chapter2">2. 화형당한 커피</a></li>
+    	<li><a href="#chapter3">3. 한국에 온 커피</a></li>
+    	<li><a hrefs="#chapter4">4. 변화하는 커피</a></li>
+  </ul>
+	</nav>
+	<div class="wrap1">
+	<header>
+		<img src="intro.png" class="imgfl">
+		<div class="overlay-text1 ">
+		<h1 class="fade-down title1 newFont title sandoll animate__animated animate__fadeInDown">커피는 진화중!</h1>
+		</div>
+	</header>
+	
+	<section>
+		
+			<img src="Vector.png" class="imgfl" style="padding-top:160px;">
+			<h2></h2>
+			<div class="overlay-text2">
+			<p class="center p2 sfont multi-line fade-down-body">
+				<span class="line1">수다떨 때 한잔,</span><br>
+				<span class="line2">공부할 때 한잔,</span><br>
+				<span class="line3">모닝커피 한잔,</span><br>
+				<span class="line4">밥 먹고 한잔,</span><br>
+				
+			</p>
+			<p class="sfont sp5 white ">일할 때나 쉴때나 언제나 함께하는 커피</p>
+		</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="wrap">
+			<h2></h2>
+			<div class="overlay-text5">
+			<p class="center p1 sfont white">언제<br>어떻게<br> 우리의 일상이 된 걸까?</p>
+			<p class="center sfont padding-top padding-bottom white bold">지금부터 커피의 여정을 따라가봐요</p>
+			<img src="bean1.png" class="bean1"><br>
+		<img src="bean2.png" class="bean2"><br>
+		<img src="bean1.png" class="bean1"><br>
+		<img src="bean2.png" class="bean2 padding-bottom">
+		</div>
+		</div>
+	</section>
+	<section>
+		<div class="wrap">
+			<img src="goatgrass.png" class="imgfl">
+			<div class="overlay-text3">
+		<h2 class="newFont mfont c1 text-right">발견된 커피 열매</h2>
+		
+		<p class=" padding-top text-right" style="width:800px;">대략 850년경, 칼디라는 이름의 한 목동은 어느날<br>자신의 염소들이 
+			평소와 다르게 행동하는 것을 발견했어요.<br>
+			염소들은 이리저리 뛰어다니기도 하고
+			두발로 서서 춤을 추었으며 밤새 잠도 자지 않았죠.
+		</p>
+		</div>
+			<img src="cherry1.png" class="cherry1 spin">
+			<img src="cherry2.png" class="cherry2 spin">
+			<img src="cherry3.png" class="cherry3 spin">
+		<p class="right-spacing2 text-right padding-bottom">원인을 조사하던 중 
+			칼디는 염소들이 먹은 한 나무의 빨간 열매가 원인이라는 것을 알게되었고,<br> 
+			그 열매를 먹어보게 되었어요.<br>
+			그 열매를 먹은 칼디는 염소들과 함께 춤을 추고 즐거워했다고 하죠.<br>
+			이때 처음으로 커피가 각성의 음료로 발견된 거에요.
+		</p>
+
+			<img src="caldi.png" style="width:700px" class="caldi">
+
+		<p class="ls">이후 한 수도사가 길을 지나다 칼디와 춤추는 염소들을 보고<br> 
+			칼디에게 다가가 그 열매에 대한 설명을 듣게 되었고,<br> 
+			이 열매가 자신의 기도에 대한 응답이라고 생각했어요!<br>
+		</p>
+			<img src="cherry4.png" class="cherry4 spin">
+			<img src="cherry5.png" class="cherry5 spin">
+			<img src="cherry6.png" class="cherry6 spin">
+		<p class="spt ls">이 수도사는 기도 중에 자주 졸았는데, 이 열매를 먹으면 졸지 않고<br> 
+			기도에 집중할 수 있을 것이라고 믿게 되었어요.<br>
+			이후 그 수도사는 다른 수도사들에게도 이 커피 열매를 알려주었지만<br> 
+			다른 수도사들은 처음에 커피를 악마의 것이라 여겨</p>
+			<p class="pink ls">불태웠다고 해요.</p>
+
+		
+		  <img src="pinkmug.png" style="width:600px" class="pinkmug">
+			<div class="overlay-text4">
+			<p class="spt center center-box sfont">하지만 불타는 열매에서 나는 향기가 너무 매혹적이어서<br>
+				그들은 열매를 꺼내 갈아 물에 타마셨고<br>
+			</p> 
+			<p class="bold center center-box sfont">이게 현재의 커피가 되었다고 합니다.
+			</p>
+			</div>
+		</div>
+	</section>
+	<section class="bg-black">
+		<div class="wrap">
+		<h2 class="center center-box white">여러분은 혹시 커피가 실제로 악마의 열매로 여겨져</h2>
+			<h2 class="pink center center-box">“화형”</h2>
+			<h2 class="center center-box white">당했다는 것을 알고 계신가요?</h2>
+		<p></p>
+	</div>
+	</section>
+	<section>
+		<div class="wrap">
+			<div class="bg-box">
+				<h2 class="newFont white padding-top2 mfont ls">화형당한 커피</h2>
+				<p class="white ls">1615년 커피가 이탈리아에 전해지기 전까지<br> 
+					커피는 주로 이슬람 사람들이 마시던 음료였어요.<br>
+					이슬람 세력을 통해 전해지다 보니,<br>
+					기독교권인 유럽에서는 커피를 이교도들이 마시는 음료로 인식했고,</p>
+				<p class="pink bold ls">
+					악마의 유혹, 야만인의 음료, 사악한 나무의 검은 썩은 물이라 부르며 경계했어요.</p>
+				<p class="gray ls">(하지만 한번 커피의 맛을 본 사람들은 계속해서 빠져들었다고 하죠.)</p>
+		</div>
+		</div>
+<div class="bg-gif">
+		<p class="center center-box white coffeefire">
+			교황 클레멘스 8세 또한<br> 
+			주변인들로부터 커피를 공식적으로 금지해달라는 압력을 받았고,<br> 
+			신자들의 합리적 요청에 따라 교황청에서 결국</p>
+		<p class="pink center center-box coffeefire">공개적인 커피나무 화형식을 거행하게 되었어요</p>
+</div>
+<div class="bg-roasting">
+		<p class="bold sfont center center-box2 white spt3">하지만 이게 웬걸?</p>
+		<p class="center center-box2 white sfont spt">커피나무가 불에 타들어갈 때마다 로스팅되는 커피 열매의 향이 너무 좋아<br>
+			반대하던 사람들마저 모두 매료되었죠.<br>
+			결국 교황 클레멘스 8세는 직접 커피를 맛본 뒤에</p>
+			<p class="center center-box2 pink bold sfont">“이 사탄의 음료는 왜 이렇게 맛이 좋은가?<br> 
+			커피는 이교도 놈들만 마시도록 놔두기엔 너무나도 아깝도다”</p>
+			<p class="center center-box2 white sfont">라고 하며 커피를 축복해 공식적으로 마실 수 있도록 승인했다고 해요.</p>
+		</div>
+		</div>
+	</section>
+
+<div class="bg-paper">
+	<section>
+	<div class="wrap">
+			<div class="stack">	 
+				<img src="text.png" style="width:280px" class="textimg img1"> 
+				<img src="dot1.png" class="img2">
+				<div class="overlay-text7">
+				<h2 class="newFont mfont koreacoffee left-spacing2">한국에 온 커피</h2>
+				<p class="left-spacing2">이렇게 맛있는 커피는 세계로 널리 널리 퍼져<br>
+				우리나라에 가배(珈琲)라는 이름으로 들어오게 되었어요.<br>
+				개화기 무역이나 선교 등 다양한 목적으로 방문한<br> 
+				서양인들이 한국에 커피를 들여왔고,<br> 
+				초기에는 상류층만 즐기던 고급 기호식품이었어요.<br>
+				대표적인 예로 고종 황제도 커피를 매우 즐겨 마셨다고 전해지죠.</p>
+			</div>
+			</div>
+	<section>
+		<div class="wrap">
+		<h2></h2>
+		<p class="right-spacing2 text-right sp6">우리나라의 커피문화는 해방과 한국전쟁을 겪으며<br> 
+			점차 대중화 되었어요. 한국전쟁 이후 미군의 전투식량 안에<br> 
+			들어있던 커피가 일명 ‘양키시장’을 통해<br>
+			시중에 나오며 서민에게도 파고들게 되었죠.</p>
+		
+		</div>
+	</section>
+	<section>
+		<div class="wrap spt3">
+		<h2></h2>
+		<p class="ls">서울 도심에 간간이 있던 다방은<br> 
+			6-70년대에 급격히 성장했는데, 해방 당시<br>
+			60여개에 불과했던 다방은</p>
+			<p class="bold ls">
+			1960년에는 1,000개를 넘겼고<br> 
+			1970년에는 3,000개에 가까울 정도로 성장했어요.</p>
+			<img src="egg.png" style="width:78%" class="egg">
+		</div>
+	</section>
+	<section>
+		<div class="wrap">
+		<h2></h2>
+		<img src="mix.png" class="mix" style="width:80%">
+		<p class="newFont smalltext overlay-texts1 center">1980<br>
+															국내 최초 인스턴트 커피<br>
+															맥심 발매</p>
+		<p class="newFont smalltext overlay-texts2 center">1987<br>
+														맥심 커피믹스 발매<br>
+														국내 최초 스틱 포장 도입</p>
+		<p class="newFont smalltext overlay-texts3 center">1993<br>
+														맥심 모카골드<br>
+														커피믹스 발매</p>
+		<p class="newFont smalltext overlay-texts4 center">2011<br>
+														인스턴트 원두커피<br>
+														맥심 카누 발매</p>
+		<p class="text-right right-spacing2 mixtext">같은 시기 동서식품에서 출시한 인스턴트 커피는<br> 
+			1990년대 말 외환위기를 겪으며 폭발적으로 성장했어요.<br>
+			외환위기 당시 대부분의 회사가 구조조정을 겪으며 커피는 본인이 타마시게 되고,<br> 
+			식당 등의 업소에서는 서비스로 커피를 무료로 제공하며<br> 
+			간편한 믹스커피의 소비가 크게 증가했죠.</p>
+		</div>
+	</section>
+	<section>
+		<div class="wrap">
+		<h2></h2>
+		<img src="dot2.png" style="width:80%" class="dot2">
+		<img src="starbucks.png" style="width:700px; padding-top: 50px;" class="ls">
+		<p class="right-spacing2 text-right" style="padding-top:50px;">또한 1988년 서울 올림픽을 기점으로 커피 수입이 자율화 되며<br>
+			원두커피가 국내로 유입되었고, 다방 대신 커피 전문점들이 들어오게 됩니다.<br>
+			1999년 7월, 신촌에 스타벅스 1호점이 개점하고</p>
+			<p class="text-right bold right-spacing2 padding-bottom">
+			 커피 전문점의 시대가 열리게 되었어요.</p>
+		</div>
+	</section>
+</div>
+
+	<section>
+		<div class="wrap bg-brown">
+			<img src="robot.png" style="padding-top:50px;">
+		<div class="hidden">	
+		<h2 class="newFont white text-right mfont uptext ight-spacing">변화하는 커피</h2>
+		<p class="white text-right uptext ight-spacing">시대가 변화하고 기술이 발전하며 캡슐 커피,<br> 
+			로봇 바리스타와 AI 추출 시스템과 같이 기술과 결합한<br> 
+			새로운 형태의 커피로 변모하며<br> 
+			커피는 바쁜 현대인의 일상 속에서 더욱 가까운 존재가 되었어요</p>
+			<img src="circle.png" class="circle under-circle" >
+		</div>
+		<p class="white ls" style="padding-top: 160px; padding-bottom: 60px;">이렇게 오랜 시간동안 전설과 종교, 산업과 기술을 거쳐<br> 
+			커피는 우리에게 가장 익숙한 음료가 되었습니다.<br>
+			앞으로의 커피는 어떤 모습일까요?<br>
+			인공지능이 나의 기분에 맞춰 커피를 추천해주는 시대,<br> 
+			환경을 고려한 재활용 캡슐로 지속 가능한 지구를 향하는 시대,</p>
+		</div>
+	</section>
+	<section class="bg-brown">
+		<div class="wrap">
+			<img src="whiteco.png">
+		<h2 class="newFont center center-box2 overlay-text8 title">커피는 여전히 진화 중입니다</h2>
+		<p></p>
+	</div>
+	</section>
+<footer>
+	
+</footer>
+
+</body>
+</html>
